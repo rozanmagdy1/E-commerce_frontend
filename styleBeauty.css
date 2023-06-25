@@ -1,0 +1,218 @@
+body{
+    margin: 0%;
+    --color1 : whitesmoke;
+    --color2 : rgba(165, 42, 42, 0.63);
+}
+*{
+    box-sizing: border-box;
+}
+/*=========== header ==================*/
+header{
+    background-color: var(--color1);
+    height: 53px;
+    padding-top: 15px;
+    font-size: 14pt;
+}
+header ul{
+    list-style-type: none;
+    display: inline;
+}
+header li{
+    display: inline;
+    margin-left: 20px;
+    font-family: Muli,Arial,Helvetica,sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header img{
+    width: 15px;
+    height: 16px;
+}
+#brand-name{
+    margin-left: 165px;
+    margin-right: 110px;
+    color: #dd1f1f9e;
+    letter-spacing: 6px;
+}
+#register{
+    font-size: 12pt;
+}
+#search{
+    width: 180px;
+    text-align: center;
+    border: 1px solid rgb(0 0 0 / 21%);
+    margin-right: 140px;
+    background-image: url("images/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 12px 15px;
+}
+
+/*=========== mainPart ==================*/
+#mainPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+#mainPart div{
+    width: 50%;
+    padding: 65px;
+    letter-spacing: 12px;
+    word-spacing: 0px;
+    font-size: 30px;
+    line-height: 75px;
+    margin-top: 65px;
+
+}
+#mainPart img{
+    height: 50%;
+    object-fit: cover;
+    width: 50%;
+}
+
+/*=========== offersPart ==================*/
+#offers img{
+    width: 100%;
+}
+
+/*=========== offers content Part ==================*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    height: 262px;
+    background-color: var(--color1);
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.mySlidesitems{
+    height: 240px;
+    width: 265px;
+}
+.mySlides img{
+    height: 230px;
+    width: 265px;
+    object-fit: cover;
+}
+.mySlides .offer-price{
+    padding-left: 100px;
+    font-size: 19pt;
+    font-family: Arial,Helvetica,sans-serif!important;
+    letter-spacing: 2px;
+    background-color: #ffffff00;
+}
+.slide{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    height: 160px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/*=========== categories Part ==================*/
+#categories img{
+    width: 195px;
+    height: 220px;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#categories-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 50px;
+    margin-left: 124px;
+}
+#categories h1{
+    font-family: Arial,Helvetica,sans-serif!important;
+    margin-left: 475px;
+    letter-spacing: 5px;
+
+}
+.categories-items{
+    display: flex;
+    flex-direction: row;
+}
+.categories-items .categories-title{
+    font-family: Arial,Helvetica,sans-serif!important;
+    line-height: 20px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    padding-top: 100px;
+}
+
+/*=========== closes sections  ==================*/
+.Beauty-titles{
+    font-family: Arial,Helvetica,sans-serif!important;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.Beauty-grid{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    row-gap: 70px;
+    column-gap: 30px;
+    margin-left: 30px;
+}
+.Beauty-grid div img{
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.Beauty-prices{
+    margin-left: 70px;
+    text-decoration: none;
+    color: white;
+    background-color: #000000db;
+    font-family: Arial,Helvetica,sans-serif!important;
+    padding: 9px;
+}
+span{
+    font-weight: bold;
+}
+.Beauty-prices:hover{
+    background-color: var(--color2);
+}
+.filter form{
+    font-size: 15pt;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.filter form span{
+    color: var(--color2);
+    letter-spacing: 2px;
+}

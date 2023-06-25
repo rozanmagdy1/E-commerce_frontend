@@ -1,0 +1,125 @@
+.flex{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 40px auto;
+    box-shadow: 7px 5px 10px 5px rgb(160, 159, 159);
+    text-align: center;
+}
+.left, .right{
+    width: 50%;
+}
+.left h2, .right h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.left{
+    background-color: rgba(205, 197, 197, 0.345);
+}
+.left h2{
+    color: rgba(0, 0, 0, 0.69);
+    margin-bottom: 25px; 
+    padding-top:50px;
+}
+#google, #facebook, #linked{
+    color: rgba(0, 0, 0, 0.69);
+    border: 2px solid rgba(72, 105, 187, 0.778);
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 9px 15px;
+    margin: 7px;
+}
+#google:hover, #facebook:hover, #linked:hover{
+    background-color: rgba(72, 105, 187, 0.778);
+    color: white;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+form{
+    padding: 20px 30px;
+}
+.field{
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 20px ;
+}
+.field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 15px;
+    border: 1.7px solid rgba(72, 105, 187, 0.778);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field input:focus, .field input:valid{
+    border-color: rgba(205, 197, 197, 0.345);
+}
+.field label{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    color:rgba(0, 0, 0, 0.69);
+    pointer-events: none; /* if we point at the label the pointer will not change*/
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+.field input:focus ~ label,
+.field input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: rgba(72, 105, 187, 0.778);
+    font-weight:bolder;
+}
+.forget{
+    color: rgba(0, 0, 0, 0.69);
+}
+.forget:hover{
+    color: rgba(72, 105, 187, 0.778);
+    transition:all 0.5s ease;
+    text-decoration: underline; 
+    cursor: pointer;
+}
+input[type="submit"], button{
+    color: white;
+    font-size:larger;
+    padding: 10px;
+    width: 100px;
+    border-radius: 15px;
+    border:none;
+}
+input[type="submit"]{
+    background-color: rgba(72, 105, 187, 0.778);
+    margin-top: 30px;
+}
+input[type="submit"]:hover{
+    background-color: transparent;
+    color: rgba(72, 105, 187, 0.778);
+    transition: all 0.7s ease;
+}
+.right{
+    background-color: rgba(72, 105, 187, 0.778);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.right h2{
+    color: white;
+}
+.right p{
+    color:rgba(0, 0, 0, 0.69);
+}
+button{
+    background-color: transparent;
+    border: 2px solid rgba(205, 197, 197, 0.345);
+}
+button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.69);
+    transition: all 0.7s ease;
+    border: 2px solid transparent;
+}

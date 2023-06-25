@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <title>Zoba</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+        <link href="style.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="sign-in.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    </head>
+    <body>
+    <!-- ==============header ==================-->
+        <header>
+            <ul>
+                <li><a href="index.html">WOMEN</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="Beauty.html">BEAUTY</a></li>
+                <li id="brand-name">ZOBA</li>
+                <li><input type="search" id="search" name="search" placeholder="shoes">
+                <li id="register"><a href="Sign-in.html"><img src="images/People-Icon-File.png" alt="people-icon"></a> <a href="Sign-in.html">Sign in/Register</a> </li>
+            </ul>
+        </header>
+
+    <!-- ============== Content ==================-->
+        <section class="flex">
+            <div class="left">
+                <h2>Sign-in</h2>
+                <a id="facebook" href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook icon-primary"></i></a>
+                <a id="google" href="https://www.google.com/search?client=firefox-b-d&q=google+plus" target="blank"><i class="fa fa fa-google-plus-g"></i></a>
+                <a id="linked" href="https://www.linkedin.com/jobs/view/2600923484/" target="blank"><i class="fa fa fa-linkedin-in"></i></a>
+                <form>
+                    <div class="field">
+                        <input type="email" required id="mail">
+                        <label>E-mail Address</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" required id="pass">
+                        <label>Password</label>
+                    </div>
+                    <a class="forget">Forget your password?</a>
+                    <br>
+                    <input type="submit" id="Sign-in" value="Sign-in">
+                </form>
+            </div>
+            <div class="right">
+                <h2>Sign-Up</h2>
+                <p>If you don't have any accounts so please sign-up</p>
+                <a href="Sign-up.html" target="_self"><button>Sign-Up</button></a>
+            </div>
+        </section>
+
+    <!-- ==============Footer Part ==================-->
+        <footer>
+            <div class="container">
+                <div class="text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-2">
+                            <h2 class="color-primary fw-bolder mb-0">ZOBA</h2>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
+                            <p class="color-text fw-bolder">About</p>
+                            <ul>
+                                <li><a href="" class="color-text">About ZOBA</a></li>
+                                <li><a href="" class="color-text">How it works</a></li>
+                                <li><a href="" class="color-text">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
+                            <p class="color-text fw-bolder">Partner with us</p>
+                            <ul>
+                                <li><a href="#" class="color-text">Partnership programs</a></li>
+                                <li><a href="#" class="color-text">Payment program</a></li>
+                                <li><a href="#" class="color-text">Connectivity partners</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
+                            <p class="color-text fw-bolder">Support</p>
+                            <ul>
+                                <li><a href="contact.html" class="color-text">Help Center</a></li>
+                                <li><a href="contact.html" class="color-text">Contact us</a></li>
+                                <li><a href="contact.html" class="color-text">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <p class="color-text fw-bolder" id="clock"></p>
+                            <script>
+                                var myVar = setInterval(function () {
+                                    myTimer();
+                                }, 1000);
+                                function myTimer() {
+                                    var d = new Date();
+                                    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
